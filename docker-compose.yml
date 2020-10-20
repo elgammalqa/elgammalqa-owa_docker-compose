@@ -1,7 +1,7 @@
 version: '3'
 
 services:
- web:
+ nginx:
   image: nginx:alpine
   ports:
    - 80:80
@@ -21,8 +21,8 @@ services:
   networks:
    - nginxphp
   links:
-   - db
-   - redis
+   - db:db
+   - redis:redis
  db:
   image: mysql
   ports:
@@ -31,12 +31,14 @@ services:
    MYSQL_ROOT_PASSWORD: root1234
   networks:
    - nginxphp
+  
  redis:
   image: redis
   ports:
    - "6379:6379"
   networks:
    - nginxphp
+  container_name: rediscon
  phpmyadmin:
   image: phpmyadmin/phpmyadmin
   ports:

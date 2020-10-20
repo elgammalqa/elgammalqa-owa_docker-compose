@@ -399,10 +399,6 @@ require './html.php';
 			}
 			settings_html();
 			break;
-		case 'About CA':
-			include './setting/settings_about_ca.php';
-			settings_about_ca_html();
-			break;
 		}
 		break;
 	

@@ -18,7 +18,7 @@ function get_guide_menu_html() {
 	} else if ($_SESSION['admin'] == 1 || $_SESSION['admin'] == 0) {
 		$menu_html .= '<a href="login.php">' . $GLOBALS['language']['guideLogin'] . '</a>';
 	}
-	$menu_html .= '<a href="manager.php?id=' . $GLOBALS['USERID'] . '&siteid=' . $GLOBALS['SITEID'] . '&menu=Settings&action=About CA"  name="About CA">' . $GLOBALS['language']['submenuSettingsAboutCA'] . '</a>';
+	#$menu_html .= '<a href="manager.php?id=' . $GLOBALS['USERID'] . '&siteid=' . $GLOBALS['SITEID'] . '&menu=Settings&action="  name="">' . $GLOBALS['language']['submenuSettingsAboutCA'] . '</a>';
 	$menu_html .= '<a href="logout.php">' . $GLOBALS['language']['guideLogOut'] . '</a>
 			</div>';
 	$menu_html .= '<div id="languagemenu" class="popup">
@@ -35,7 +35,6 @@ function get_side_menu_html() {
 	return '<div id="leftbox" class="body_left_side">
 		<div id="side_menu_bar" class="div_side_menu_bar">
 			<div class="div_logo">
-				<a href="#" onclick="switch_menu()"><img class="img_logo" src="" alt="FYIPress" /></a>
 			</div>
 			<div id="side_menu" class="div_side_menu">
 			<ul style="display:block;">
@@ -113,15 +112,15 @@ function get_side_menu_html() {
 						($_SESSION['admin'] == 2 || $_SESSION['admin'] == 4 ? 
 						'<li><a href="manager.php?id=' . $GLOBALS['USERID'] . '&siteid=' . $GLOBALS['SITEID'] . '&menu=Settings&action=Settings">' . $GLOBALS['language']['guideSettings'] . '</a></li>' : 
 						'<li><a href="login.php">' . $GLOBALS['language']['guideLogin'] . '</a></li>').
-						'<li><a href="https://www.centcount.com/doc.php" target="_blank" title="Help" alt="Help">' . $GLOBALS['language']['guideDoc'] . '</a>
-						<li><a href="manager.php?id=' . $GLOBALS['USERID'] . '&siteid=' . $GLOBALS['SITEID'] . '&menu=Settings&action=About CA"  name="About CA">' . $GLOBALS['language']['submenuSettingsAboutCA'] . '</a></li>
+						'<li><a href="" target="_blank" title="Help" alt="Help">' . $GLOBALS['language']['guideDoc'] . '</a>
+						<li><a href="manager.php?id=' . $GLOBALS['USERID'] . '&siteid=' . $GLOBALS['SITEID'] . '&menu=Settings&action=A"  name="">' . $GLOBALS['language']['submenuSettingsAboutCA'] . '</a></li>
 						<li><a href="logout.php">' . $GLOBALS['language']['guideLogOut'] . '</a></li>
 					</ul>
 				</li>
 			</ul>
 			</div>
 			<div id="copyright" class="div_copyright">
-				<a href=""></a>
+				
 			</div>
 		</div>
 		<div id="hidebtn" class="div_side_menu_hide_btn" onclick="switch_menu()">

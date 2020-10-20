@@ -221,8 +221,8 @@ $GLOBALS['indicator'] = array(
 	'Add' => 'Add',
 	'Batch Add' => 'Batch Add',
 
-	'About CA' => 'About Centcount Analytics',
-	'Thanks' => 'Thanks To',
+	#'About CA' => 'About Centcount Analytics',
+	#'Thanks' => 'Thanks To',
 
 	'FakeData' => 'Fake Data',
 	'Yes' => 'Yes',
@@ -237,7 +237,7 @@ $GLOBALS['language'] = array(
 	//======== guide menu section ======== 
 	'guideHome' => 'Home',
 	'guideRegister' => 'Register',
-	'guideAboutUs' => 'About',
+	'guideAboutUs' => '',
 	'guideContact' => 'Contact',
 	
 	'guideSites' => 'Sites',
@@ -246,7 +246,7 @@ $GLOBALS['language'] = array(
 	'guideTools' => 'Tools',
 	'guideLanguage' => 'English',
 	'guideHelp' => 'Help',
-	'guideDoc' => 'Documentation',
+	'guideDoc' => '',
 	'guideLogOut' => 'Log Out',
 	'guideLogin' => 'Login',
 	'guideLicensePrice' => 'License & Price',
@@ -316,7 +316,7 @@ $GLOBALS['language'] = array(
 	'submenuSettingsSettings' => 'Settings',
 	'submenuSettingsChangePassword' => 'Change Password',
 	'submenuSettingsChangeEmail' => 'Change Email',
-	'submenuSettingsAboutCA' => 'About CA',
+	'submenuSettingsAboutCA' => '',
 
 	
 	//======== page & error info section ======== 
