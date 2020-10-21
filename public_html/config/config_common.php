@@ -21,7 +21,7 @@
 //encode factor
 define('ENCODE_FACTOR', 'abcdef123456');//RESET YOUR PRIVATE ENCODE FACTOR, IT IS VERY IMPORTANT
 //mysql local host name
-define('DB_HOST_LOCAL', '172.24.0.2');//set your mysql host name or ip
+define('DB_HOST_LOCAL', '172.19.0.3');//set your mysql host name or ip
 //mysql local root name
 define('ROOT_USER_LOCAL', 'root');//set your mysql login username here (Creating Database Permission Is Necessary)
 //mysql local root password
